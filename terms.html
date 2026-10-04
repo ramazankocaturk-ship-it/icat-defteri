@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>İcat Defteri – Kullanıcı Sözleşmesi</title>
+    <style>
+        :root {
+            --bg-color: #F0F7FF;
+            --card-bg: #FFFFFF;
+            --primary: #007AFF;
+            --text-main: #0F172A;
+            --text-muted: #64748B;
+            --border: rgba(0, 120, 240, 0.12);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+        body {
+            background: linear-gradient(180deg, #D4EDFC 0%, #E8F5FD 25%, #F8FAFC 60%, #FFFFFF 100%);
+            color: var(--text-main);
+            padding: 20px 16px 40px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 24px;
+            padding: 28px 22px;
+            box-shadow: 0 10px 30px rgba(0, 70, 160, 0.08);
+            border: 1px solid var(--border);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 18px;
+        }
+        .header h1 {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 6px;
+        }
+        .header p {
+            font-size: 0.85rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
+        .meta-info {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+        h2 {
+            font-size: 1.05rem;
+            color: var(--text-main);
+            margin: 22px 0 8px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        p, li {
+            font-size: 0.88rem;
+            color: #334155;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 12px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        .warning-box {
+            background: #FFF7ED;
+            border: 1px solid #FFEDD5;
+            border-left: 4px solid #F97316;
+            border-radius: 12px;
+            padding: 12px 14px;
+            margin: 16px 0;
+            font-size: 0.85rem;
+            color: #9A3412;
+            line-height: 1.5;
+        }
+        .close-bar {
+            text-align: center;
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid var(--border);
+        }
+        .btn-back {
+            display: inline-block;
+            background: var(--primary);
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 10px 24px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.88rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>İcat Defteri – Kullanıcı Sözleşmesi</h1>
+            <p>Son Güncelleme: 4 Ekim 2026 • Sürüm: 1.0.0</p>
+            <div class="meta-info">Geliştirici: Ramazan Kocatürk</div>
+        </div>
+
+        <h2>1. Taraflar ve Amaç</h2>
+        <p>İşbu Kullanıcı Sözleşmesi ("Sözleşme"), İcat Defteri mobil uygulamasını ("Uygulama") kullanan gerçek kişi ("Kullanıcı") ile Uygulama geliştiricisi Ramazan Kocatürk ("Geliştirici") arasında akdedilmiştir. Uygulamayı kullanarak bu sözleşmede belirtilen tüm şartları kabul etmiş sayılırsınız.</p>
+
+        <h2>2. Yerel Veri Depolama ve Bulut Yedeği Yokluğu</h2>
+        <p>İcat Defteri, kullanıcı gizliliğini en üst düzeyde korumak amacıyla yerel mimari (local-first) üzerine inşa edilmiştir:</p>
+        <ul>
+            <li>Not başlıkları, not metinleri, kategoriler ve kurulan hatırlatıcılar <strong>yalnızca Kullanıcı'nın cihazının yerel hafızasında</strong> tutulur.</li>
+            <li>Geliştiricinin veya Uygulamanın herhangi bir uzak sunucusu, merkezi veritabanı veya otomatik bulut yedekleme altyapısı <strong>bulunmamaktadır</strong>.</li>
+            <li>Geliştirici, kullanıcıların verilerini arka planda otomatik olarak herhangi bir bulut alanına aktarmaz ve saklamaz.</li>
+        </ul>
+
+        <h2>3. Veri Kaybı Riski ve Kullanıcının Yedekleme Sorumluluğu</h2>
+        <div class="warning-box">
+            <strong>ÖNEMLİ BİLGİLENDİRME:</strong><br>
+            Telefonun kaybolması, çalınması, bozulması, fabrika ayarlarına sıfırlanması veya İcat Defteri uygulamasının cihazdan kaldırılması durumunda cihazda yerel olarak saklanan tüm notlar ve veriler kalıcı olarak silinebilir ve kurtarılamaz hale gelebilir.
+        </div>
+        <p>Kullanıcı, önemli fikir ve notlarının yedeğini almanın tamamen kendi sorumluluğunda olduğunu kabul eder. Uygulama içerisinde sunulan <strong>"Yedekle / Dışa Aktar"</strong> fonksiyonu kullanılarak yedek dosyasının (JSON formatında) periyodik olarak Kullanıcı'nın güvenli bulduğu harici bir ortama (e-posta, harici sürücü veya kişisel bulut) aktarılması önemle tavsiye edilir.</p>
+
+        <h2>4. Sorumluluğun Sınırlandırılması</h2>
+        <p>Yürürlükteki mevzuatın izin verdiği ölçüde geliştirici; cihazın kaybolması, çalınması, arızalanması, sıfırlanması, uygulamanın kaldırılması, kullanıcının yedek almaması veya kullanıcının kontrolündeki diğer nedenlerle oluşabilecek yerel veri kayıplarından sorumlu tutulamaz.</p>
+        <p>Ayrıca Uygulama mevcut haliyle ("olduğu gibi" / as-is) sunulmakta olup; hatırlatıcı bildirimlerinin cihazın pil tasarrufu, pil optimizasyonu veya arka plan kısıtlamaları nedeniyle gecikmesi veya gösterilmemesi gibi işletim sistemi kaynaklı aksaklıklardan geliştirici sorumlu tutulamaz.</p>
+
+        <h2>5. Ses Tanıma ve Sesli Okuma (TTS) Hizmetleri</h2>
+        <p>Uygulamada konuşmanın metne dönüştürülmesi (Speech-to-Text) ve notların sesli okunması (Text-to-Speech) işlemleri Android işletim sisteminin <strong>Google Ses Hizmetleri / Cihaz Konuşma Motoru</strong> altyapısı kullanılarak gerçekleştirilir:</p>
+        <ul>
+            <li>Kullanıcının cihaz ve ses hizmeti ayarlarına bağlı olarak konuşma verisi, konuşma tanıma amacıyla Google sunucuları tarafından çevrimiçi işlenebilir.</li>
+            <li>İcat Defteri ham ses kaydını cihazda veya harici bir sunucuda kesinlikle saklamaz; işlem bittiğinde yalnızca üretilen metin cihaz hafızasına kaydedilir.</li>
+            <li>Sesli okuma (TTS) cihazın yerel motoru tarafından gerçekleştirilir, geliştiriciye herhangi bir metin veya ses iletilmez.</li>
+        </ul>
+
+        <h2>6. Fikri Mülkiyet ve Kullanım Hakkı</h2>
+        <p>Uygulamanın tasarım, logo, arayüz, yazılım kodları ve tüm fikri hakları Ramazan Kocatürk'e aittir. Kullanıcı tarafından oluşturulan notların fikri mülkiyeti ise tamamen Kullanıcı'ya aittir.</p>
+
+        <h2>7. İletişim</h2>
+        <p>Sözleşme, öneri veya destek talepleriniz için geliştirici ile iletişime geçebilirsiniz:</p>
+        <p><strong>E-posta:</strong> <a href="mailto:ramazankocaturk@gmail.com" style="color: var(--primary);">ramazankocaturk@gmail.com</a></p>
+
+        <div class="close-bar">
+            <a href="javascript:window.close();" class="btn-back" onclick="if(window.history.length > 1){window.history.back();}else{window.close();}">Kapat / Geri Dön</a>
+        </div>
+    </div>
+</body>
+</html>
