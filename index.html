@@ -3,155 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İcat Defteri – Resmi Bilgilendirme ve Hukuki Metinler</title>
-    <style>
-        :root {
-            --primary: #007AFF;
-            --primary-dark: #0056B3;
-            --text-main: #0F172A;
-            --text-muted: #64748B;
-            --bg-page: #F8FAFC;
-            --card-bg: #FFFFFF;
-            --border: rgba(0, 120, 240, 0.12);
-        }
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
-        body {
-            background: linear-gradient(180deg, #E0F2FE 0%, #F0F9FF 30%, #F8FAFC 70%, #FFFFFF 100%);
-            color: var(--text-main);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 24px 16px;
-        }
-        .container {
-            max-width: 600px;
-            width: 100%;
-            background: var(--card-bg);
-            border-radius: 28px;
-            padding: 36px 28px;
-            box-shadow: 0 12px 40px rgba(0, 70, 160, 0.08);
-            border: 1px solid var(--border);
-            text-align: center;
-        }
-        .app-badge {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 72px;
-            height: 72px;
-            border-radius: 20px;
-            background: linear-gradient(135deg, #007AFF, #0056B3);
-            color: #FFFFFF;
-            font-size: 34px;
-            margin-bottom: 20px;
-            box-shadow: 0 8px 24px rgba(0, 122, 255, 0.28);
-        }
-        h1 {
-            font-size: 1.6rem;
-            font-weight: 800;
-            color: var(--text-main);
-            margin-bottom: 8px;
-        }
-        .slogan {
-            font-size: 0.95rem;
-            color: var(--primary);
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .desc {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            line-height: 1.6;
-            margin-bottom: 28px;
-        }
-        .links-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-            margin-bottom: 30px;
-        }
-        .doc-card {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 18px 22px;
-            background: #F1F5F9;
-            border-radius: 16px;
-            text-decoration: none;
-            color: var(--text-main);
-            transition: all 0.2s ease;
-            border: 1px solid transparent;
-        }
-        .doc-card:hover {
-            background: #FFFFFF;
-            border-color: var(--primary);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 122, 255, 0.12);
-        }
-        .doc-info {
-            text-align: left;
-        }
-        .doc-title {
-            font-weight: 700;
-            font-size: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 4px;
-            color: var(--text-main);
-        }
-        .doc-sub {
-            font-size: 0.82rem;
-            color: var(--text-muted);
-        }
-        .doc-arrow {
-            font-size: 1.2rem;
-            color: var(--primary);
-            font-weight: bold;
-        }
-        .footer {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            border-top: 1px solid var(--border);
-            padding-top: 18px;
-        }
-        .footer a {
-            color: var(--primary);
-            text-decoration: none;
-        }
-    </style>
+    <title>İcat Defteri – Resmî Uygulama Merkezi, Kullanım Kılavuzu ve Hukuki Belgeler</title>
+    <meta name="description" content="İcat Defteri Android uygulaması resmî kullanım kılavuzu, gizlilik politikası, 6698 sayılı KVKK aydınlatma metni ve kullanıcı sözleşmesi.">
+    <link rel="icon" type="image/png" href="assets/Icat_Defteri_Play-Store_Icon_512.png">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="site.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="app-badge">🎙️</div>
-        <h1>İcat Defteri</h1>
-        <div class="slogan">Düşün, konuş, kaydet. Fikrini kaybetme.</div>
-        <p class="desc">
-            İcat Defteri mobil uygulaması resmi yasal bilgilendirme ve hukuki dokümantasyon merkezidir.
-        </p>
-
-        <div class="links-grid">
-            <a href="privacy.html" class="doc-card">
-                <div class="doc-info">
-                    <div class="doc-title">🔒 Gizlilik Politikası & KVKK</div>
-                    <div class="doc-sub">Veri güvenliği, yerel saklama ve kullanıcı hakları</div>
-                </div>
-                <div class="doc-arrow">→</div>
-            </a>
-
-            <a href="terms.html" class="doc-card">
-                <div class="doc-info">
-                    <div class="doc-title">📜 Kullanıcı Sözleşmesi</div>
-                    <div class="doc-sub">Hizmet şartları, yedekleme ve sorumluluk sınırları</div>
-                </div>
-                <div class="doc-arrow">→</div>
-            </a>
-        </div>
-
-        <div class="footer">
-            Geliştirici: Ramazan Kocatürk • İletişim: <a href="mailto:ramazankocaturk@gmail.com">ramazankocaturk@gmail.com</a>
-        </div>
+<a class="skip-link" href="#main-content">İçeriğe geç</a>
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="brand-link">
+            <img src="assets/Icat_Defteri_Play-Store_Icon_512.png" alt="İcat Defteri Resmî Logosu" class="brand-logo" width="34" height="34">
+            <span class="brand-text-col">
+                <span class="brand-name">İcat Defteri</span>
+                <span class="brand-tag">Dokümantasyon Merkezi</span>
+            </span>
+        </a>
+        <nav class="nav-links" aria-label="Üst Menü">
+            <a href="index.html" aria-current="page">Ana Sayfa</a>
+            <a href="guide.html">Kullanım Kılavuzu</a>
+            <a href="privacy.html">Gizlilik Politikası</a>
+            <a href="kvkk.html">KVKK Aydınlatma</a>
+            <a href="terms.html">Kullanıcı Sözleşmesi</a>
+        </nav>
+        <button type="button" id="mobile-nav-toggle" class="mobile-nav-toggle" aria-expanded="false" aria-controls="mobile-nav-drawer">
+            <span>Menü</span>
+            <span aria-hidden="true">☰</span>
+        </button>
     </div>
+    <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Mobil Menü">
+        <a href="index.html" aria-current="page">Ana Sayfa</a>
+        <a href="guide.html">Kullanım Kılavuzu</a>
+        <a href="privacy.html">Gizlilik Politikası</a>
+        <a href="kvkk.html">KVKK Aydınlatma</a>
+        <a href="terms.html">Kullanıcı Sözleşmesi</a>
+    </div>
+</header>
+<main id="main-content" class="page-wrap">
+    <div class="status-notice" role="note">
+        <strong>Bilgilendirme:</strong> Bu resmî merkez İcat Defteri Android uygulamasını ve sunduğu özellikleri açıklar. Kullanılabilir özellikler, yüklü uygulama sürümüne göre değişebilir.
+    </div>
+    
+    <section class="hero-section">
+        <div>
+            <span class="hero-kicker">Android Uygulaması • 7 Dil Desteği • Yerel Öncelikli Mimari</span>
+            <img src="assets/icat-defteri-yazi.png" alt="İcat Defteri" class="hero-wordmark" width="938" height="199">
+            <h1 class="hero-title">Düşün, konuş, kaydet. Fikrini kaybetme.</h1>
+            <p class="hero-subtitle">İcat Defteri; fikirlerinizi, projelerinizi ve günlük notlarınızı renkli başlıklar altında toplamanızı, klavyeyle veya sesle hızlıca kaydetmenizi ve hatırlatıcılarla takip etmenizi sağlayan kişisel not defteridir. Ses kaydı, bağımsız dosya ekleri, çizim tahtası, A4 PDF raporu ve isteğe bağlı kişisel Google Drive yedeklemesi gibi özellikler desteklenen uygulama sürümlerinde sunulur.</p>
+            <div class="hero-actions">
+                <a href="guide.html" class="btn-primary"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg> Kullanım Kılavuzu</a>
+                <a href="privacy.html" class="btn-secondary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg> Gizlilik Politikası &amp; KVKK</a>
+            </div>
+        </div>
+
+        <aside class="hero-summary-card" aria-label="Uygulama Özet Bilgileri">
+            <div class="summary-brand-row">
+                <img src="assets/Icat_Defteri_Play-Store_Icon_512.png" alt="İcat Defteri Logosu" class="summary-logo" width="512" height="512">
+                <div>
+                    <div class="summary-title">İcat Defteri</div>
+                    <div class="summary-sub">Cihaz odaklı koruma • Geliştirici sunucusu yok</div>
+                </div>
+            </div>
+            <div class="fact-list">
+                <div class="fact-item"><span class="fact-label">Platform</span><span class="fact-val">Android (Google Play)</span></div>
+                <div class="fact-item"><span class="fact-label">Dil Desteği</span><span class="fact-val">7 Dil (TR, EN, DE, FR, ES, IT, PT)</span></div>
+                <div class="fact-item"><span class="fact-label">Ses Kaydı</span><span class="fact-val">Uygulamaya özel korumalı .m4a</span></div>
+                <div class="fact-item"><span class="fact-label">Dosya Ekleri</span><span class="fact-val">Bağımsız kopya • Azami 200 MB</span></div>
+                <div class="fact-item"><span class="fact-label">Google Drive Yedeği</span><span class="fact-val">İsteğe bağlı • Kişisel hesabınız</span></div>
+                <div class="fact-item"><span class="fact-label">Otomatik Sistem Yedeği</span><span class="fact-val">Kapalı (kullanıcı kontrolünde)</span></div>
+            </div>
+        </aside>
+    </section>
+
+    <section class="section-block">
+        <div class="section-header">
+            <span class="section-kicker">Temel Yetenekler</span>
+            <h2>Hızlı fikir yakalamadan düzenli projelere</h2>
+            <p>Yerel not, sesle yazma, gerçek M4A ses kaydı, bağımsız medya ekleri, çizim, PDF raporlama ve esnek yedekleme seçenekleriyle notlarınızı kontrol altında tutun.</p>
+        </div>
+        <div class="feature-grid">
+            <div class="feature-tile">
+                <span class="tile-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg></span>
+                <h3>Sesle Yazma ve Gerçek M4A Ses Kaydı</h3>
+                <p>Canlı konuşmadan metne çevirme (dikte) özelliğinde ham ses kaydedilmez. <strong>Ses Kaydet (.m4a)</strong> kullanıldığında ses dosyaları telefonun genel Müzik klasörüne değil, yalnızca uygulamaya özel güvenli dahili alana kaydedilir.</p>
+            </div>
+            <div class="feature-tile">
+                <span class="tile-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg></span>
+                <h3>Bağımsız Dosya Ekleri, Çizim &amp; PDF Rapor</h3>
+                <p>Eklenen fotoğraf, video ve belgeler (dosya başı azami 200 MB) uygulamanın kendi alanında bağımsız kopya olarak korunur; galeriden asıl dosyayı silseniz bile notunuzdaki kopya bozulmaz. Tam ekran vektör çizim ve A4 PDF raporu desteklenir.</p>
+            </div>
+            <div class="feature-tile">
+                <span class="tile-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg></span>
+                <h3>Cihaz Yedeği ve İsteğe Bağlı Google Drive</h3>
+                <p>Hafif metin yedeği (.json) yanında medya dahil .zip ve isteğe bağlı parolalı AES-256-GCM (.icdbak) arşivler oluşturabilirsiniz. Google Drive yedeklemesi tamamen isteğe bağlıdır; yalnızca sizin bağladığınız kendi hesabınızdaki <em>İcat Defteri / Yedekler</em> klasörünü kullanır.</p>
+            </div>
+            <div class="feature-tile">
+                <span class="tile-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></span>
+                <h3>Gizlilik Öncelikli ve Kişiselleştirilebilir</h3>
+                <p>Geliştirici sunucusu, reklam veya analitik izleme yoktur. Biyometrik/PIN cihaz kilidi, tek dokunuş ana ekran widget'ı, etiketleme, genel arama, sürükle-bırak sıralama ve beş farklı tema seçeneği sunar.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-block">
+        <div class="section-header">
+            <span class="section-kicker">Kullanım Akışı</span>
+            <h2>Notlarınız dört adımda nasıl korunur?</h2>
+            <p>Tüm içerik önce kendi cihazınızda oluşturulur ve saklanır; dışa aktarma veya kişisel Google Drive yedeklemesi yalnızca sizin açık işleminizle başlar.</p>
+        </div>
+        <div class="process-flow">
+            <div class="process-step">
+                <span class="step-num">01</span>
+                <h3>Yakala</h3>
+                <p>Ana ekran widget'ından veya uygulama içinden metin notu, canlı dikte ya da özel .m4a ses kaydı açın.</p>
+            </div>
+            <div class="process-step">
+                <span class="step-num">02</span>
+                <h3>Düzenle</h3>
+                <p>Renkli başlıklar, etiket filtreleri, genel arama, sürükle-bırak sıralama ve hatırlatıcılarla fikirlerinizi düzenleyin.</p>
+            </div>
+            <div class="process-step">
+                <span class="step-num">03</span>
+                <h3>Zenginleştir</h3>
+                <p>Fotoğraf, video, belge veya tam ekran çizim ekleyin; projenizi paylaşılabilir A4 PDF raporuna dönüştürün.</p>
+            </div>
+            <div class="process-step">
+                <span class="step-num">04</span>
+                <h3>Yedekle</h3>
+                <p>İhtiyacınıza göre cihaza metin (.json), tam arşiv (.zip / şifreli .icdbak) ya da kendi Google Drive hesabınıza yedekleyin.</p>
+            </div>
+        </div>
+
+        <div class="warning-box" style="margin-top: 28px;">
+            <strong>Veri Güvenliği Hatırlatması:</strong> Uygulamada otomatik sistem bulut yedeği kapalıdır ve yalnızca metin yedeği (.json) ses kayıtları ile ek dosyaları içermez. Yeni telefona geçişte ses ve medya eklerini de korumak için medya seçeneği açık tam arşiv (.zip / .icdbak) veya Google Drive yedeği kullanmanız önerilir.
+        </div>
+    </section>
+
+    <section class="section-block" style="border-bottom: none; padding-bottom: 12px;">
+        <div class="section-header">
+            <span class="section-kicker">Dokümantasyon ve Hukuki Merkez</span>
+            <h2>Kılavuz ve bilgilendirme metinleri</h2>
+            <p>Kullanım Kılavuzu, Gizlilik Politikası, KVKK Aydınlatma Metni ve Kullanıcı Sözleşmesi belgelerine doğrudan erişebilirsiniz.</p>
+        </div>
+        <div class="docs-hub-grid">
+            <a href="guide.html" class="doc-card">
+                <div>
+                    <div class="doc-card-title">Kullanım Kılavuzu (18 Bölüm • 7 Dil)</div>
+                    <div class="doc-card-sub">Tüm özelliklerin adım adım anlatımı, ses kaydı/dikte farkı, bağımsız ekler ve SSS</div>
+                </div>
+                <span class="doc-card-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="privacy.html" class="doc-card">
+                <div>
+                    <div class="doc-card-title">Gizlilik Politikası ve Veri Güvenliği</div>
+                    <div class="doc-card-sub">Yerel depolama, izinlerin kullanım amacı, M4A/ek yaşam döngüsü ve Drive kapsamı</div>
+                </div>
+                <span class="doc-card-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="kvkk.html" class="doc-card">
+                <div>
+                    <div class="doc-card-title">6698 Sayılı KVKK Aydınlatma Metni</div>
+                    <div class="doc-card-sub">Veri sorumlusu, veri kategorileri, hukuki sebepler, aktarım ve Madde 11 hakları</div>
+                </div>
+                <span class="doc-card-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="terms.html" class="doc-card">
+                <div>
+                    <div class="doc-card-title">Kullanıcı Sözleşmesi</div>
+                    <div class="doc-card-sub">Hizmet kapsamı, veri kaybı uyarıları, şifreli yedek parolası ve geri yükleme kuralları</div>
+                </div>
+                <span class="doc-card-arrow" aria-hidden="true">→</span>
+            </a>
+        </div>
+    </section>
+</main>
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <img src="assets/Icat_Defteri_Play-Store_Icon_512.png" alt="İcat Defteri Logosu" class="footer-logo" width="28" height="28">
+            <div class="footer-meta">
+                <div><strong>İcat Defteri</strong> • Geliştirici ve Veri Sorumlusu: <strong>Ramazan Kocatürk</strong></div>
+                <div>Destek ve Başvuru: <a href="mailto:ramazankocaturk@gmail.com">ramazankocaturk@gmail.com</a> • Kullanılabilir özellikler, yüklü uygulama sürümüne göre değişebilir.</div>
+            </div>
+        </div>
+        <nav class="footer-links" aria-label="Alt Menü">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="guide.html">Kullanım Kılavuzu</a>
+            <a href="privacy.html">Gizlilik Politikası</a>
+            <a href="kvkk.html">KVKK Aydınlatma</a>
+            <a href="terms.html">Kullanıcı Sözleşmesi</a>
+        </nav>
+    </div>
+</footer>
 </body>
 </html>
