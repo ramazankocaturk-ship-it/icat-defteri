@@ -1,140 +1,182 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İcat Defteri – Kullanıcı Sözleşmesi</title>
-    <meta name="description" content="İcat Defteri kullanıcı sözleşmesi: hizmet kapsamı, veri kaybı riskleri, yedekleme biçimleri, şifreli .icdbak parola sorumluluğu ve geri yükleme kuralları.">
-    <link rel="icon" type="image/png" href="assets/Icat_Defteri_Play-Store_Icon_512.png">
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="site.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İcat Defteri — Kullanıcı Sözleşmesi ve Kullanım Şartları</title>
+  <meta name="description" content="İcat Defteri kullanıcı sözleşmesi: yerel öncelikli mimari, JSON/ZIP yedekleme sorumluluğu, fikri mülkiyet ve kullanım şartları.">
+  <meta name="theme-color" content="#060b18">
+  <link rel="canonical" href="https://icatdefteri.com/terms.html">
+  <link rel="icon" type="image/png" href="assets/Icat_Defteri_Play-Store_Icon_512.png">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="İcat Defteri">
+  <meta property="og:title" content="İcat Defteri — Kullanıcı Sözleşmesi ve Kullanım Şartları">
+  <meta property="og:description" content="İcat Defteri kullanıcı sözleşmesi: yerel öncelikli mimari, JSON/ZIP yedekleme sorumluluğu, fikri mülkiyet ve kullanım şartları.">
+  <meta property="og:url" content="https://icatdefteri.com/terms.html">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<a class="skip-link" href="#main-content">İçeriğe geç</a>
-<header class="site-header">
-    <div class="header-inner">
-        <a href="index.html" class="brand-link">
-            <img src="assets/Icat_Defteri_Play-Store_Icon_512.png" alt="İcat Defteri Resmî Logosu" class="brand-logo" width="34" height="34">
-            <span class="brand-text-col">
-                <span class="brand-name">İcat Defteri</span>
-                <span class="brand-tag">Dokümantasyon Merkezi</span>
-            </span>
+<body data-page="terms">
+  <a class="skip-link" href="#main-content" data-i18n="skip_main">Ana içeriğe geç</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-link" href="index.html" aria-label="İcat Defteri Ana Sayfa">
+        <img class="brand-icon" src="assets/icon-192.webp" alt="İcat Defteri simgesi" width="36" height="36">
+        <img class="brand-wordmark" src="assets/wordmark.webp" alt="İcat Defteri" width="113" height="24">
+      </a>
+
+      <nav class="nav-desktop" aria-label="Ana menü">
+        <a href="index.html" data-i18n="nav_home">Ana Sayfa</a>
+        <a href="guide.html" data-i18n="nav_guide">Kullanım Kılavuzu</a>
+        <a href="privacy.html" data-i18n="priv_link_policy">Gizlilik Politikası</a>
+        <a href="terms.html" data-i18n="priv_link_terms" aria-current="page">Kullanım Şartları</a>
+        <a href="kvkk.html" data-i18n="priv_link_kvkk">KVKK Aydınlatma Metni</a>
+      </nav>
+
+      <div class="header-actions">
+        <select id="site-lang-select" class="lang-select" aria-label="Site dilini seçin" data-i18n-aria="lang_aria">
+          <option value="tr">TR</option>
+          <option value="en">EN</option>
+          <option value="de">DE</option>
+          <option value="fr">FR</option>
+          <option value="es">ES</option>
+          <option value="it">IT</option>
+          <option value="pt">PT</option>
+        </select>
+
+        <a class="btn-header-cta" href="https://play.google.com/store/apps/details?id=com.rkocaturk.icatdefteri" target="_blank" rel="noopener noreferrer">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.4c-.3.3-.6.9-.6 1.6v16c0 .7.3 1.3.6 1.6l.1.1 9-9v-.2l-9-9-.1-.1zm12 12.1l-3-3v-.2l3-3 .1.1 3.5 2c1 .6 1 1.5 0 2.1l-3.5 2-.1 0zm-9.9 6.8l9.8-5.6-2.9-2.9-6.9 8.5zm9.8-13L5.7 2.7l6.9 8.5 2.9-2.9z"/></svg>
+          <span data-i18n="nav_cta">Google Play</span>
         </a>
-        <nav class="nav-links" aria-label="Üst Menü">
-            <a href="index.html">Ana Sayfa</a>
-            <a href="guide.html">Kullanım Kılavuzu</a>
-            <a href="privacy.html">Gizlilik Politikası</a>
-            <a href="kvkk.html">KVKK Aydınlatma</a>
-            <a href="terms.html" aria-current="page">Kullanıcı Sözleşmesi</a>
-        </nav>
-        <button type="button" id="mobile-nav-toggle" class="mobile-nav-toggle" aria-expanded="false" aria-controls="mobile-nav-drawer">
-            <span>Menü</span>
-            <span aria-hidden="true">☰</span>
+
+        <button id="mobile-menu-toggle" class="mobile-toggle" type="button" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Menüyü aç veya kapat" data-i18n-aria="menu_aria">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
+      </div>
     </div>
-    <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Mobil Menü">
-        <a href="index.html">Ana Sayfa</a>
-        <a href="guide.html">Kullanım Kılavuzu</a>
-        <a href="privacy.html">Gizlilik Politikası</a>
-        <a href="kvkk.html">KVKK Aydınlatma</a>
-        <a href="terms.html" aria-current="page">Kullanıcı Sözleşmesi</a>
-    </div>
-</header>
-<main id="main-content" class="page-wrap">
-    <div class="status-notice" role="note">
-        <strong>Bilgilendirme:</strong> Bu resmî merkez İcat Defteri Android uygulamasını ve sunduğu özellikleri açıklar. Kullanılabilir özellikler, yüklü uygulama sürümüne göre değişebilir.
-    </div>
-    <div class="mobile-toc">
-        <button type="button" id="mobile-toc-btn" class="mobile-toc-btn" aria-expanded="false" aria-controls="mobile-toc-panel">
-            <span>Sözleşme Maddeleri (6)</span>
-            <span aria-hidden="true">▾</span>
+  </header>
+
+  <nav id="mobile-drawer" class="mobile-drawer" aria-label="Mobil menü">
+    <a href="index.html" data-i18n="nav_home">Ana Sayfa</a>
+    <a href="guide.html" data-i18n="nav_guide">Kullanım Kılavuzu</a>
+    <a href="privacy.html" data-i18n="priv_link_policy">Gizlilik Politikası</a>
+    <a href="terms.html" data-i18n="priv_link_terms" aria-current="page">Kullanım Şartları</a>
+    <a href="kvkk.html" data-i18n="priv_link_kvkk">KVKK Aydınlatma Metni</a>
+    <a class="btn-primary" href="https://play.google.com/store/apps/details?id=com.rkocaturk.icatdefteri" target="_blank" rel="noopener noreferrer" data-i18n="hero_cta_play">Google Play'de İndir</a>
+  </nav>
+
+  <main id="main-content" class="doc-page-main">
+    <div class="container">
+      <div class="mobile-toc-wrap">
+        <button id="mobile-toc-btn" class="mobile-toc-btn" type="button" aria-expanded="false" aria-controls="mobile-toc-panel">
+          <span data-i18n="doc_toc_mobile">Bölümlere Hızlı Geçiş</span>
+          <span aria-hidden="true">▾</span>
         </button>
         <div id="mobile-toc-panel" class="mobile-toc-panel">
-            <ul id="mobile-toc-list" class="toc-list">
-                <li><a href="#sec-1">1. Taraflar, Kapsam ve Uygulama Kapsamı</a></li>
-                <li><a href="#sec-2">2. Yerel Öncelikli Mimari ve Opsiyonel Google Drive</a></li>
-                <li><a href="#sec-3">3. Veri Kaybı Riski, Yedek Biçimleri ve Kullanıcı Sorumluluğu</a></li>
-                <li><a href="#sec-4">4. Ses İşleme, Dosya Ekleri ve Çöp Kutusu</a></li>
-                <li><a href="#sec-5">5. Sorumluluğun Sınırlandırılması</a></li>
-                <li><a href="#sec-6">6. Fikri Mülkiyet, Gizlilik ve İletişim</a></li>
-            </ul>
+          <ul id="mobile-toc-list" class="toc-list">
+              <li><a href="#sec-1">1. Taraflar, Kapsam ve Sürüm Ayrımı</a></li>
+              <li><a href="#sec-2">2. Yerel Öncelikli Mimari ve Opsiyonel Google Drive</a></li>
+              <li><a href="#sec-3">3. Veri Kaybı Riski, Yedek Biçimleri ve Kullanıcı Sorumluluğu</a></li>
+              <li><a href="#sec-4">4. Ses İşleme, Dosya Ekleri ve Çöp Kutusu</a></li>
+              <li><a href="#sec-5">5. Sorumluluğun Sınırlandırılması</a></li>
+              <li><a href="#sec-6">6. Fikri Mülkiyet, Gizlilik ve İletişim</a></li>
+          </ul>
         </div>
-    </div>
+      </div>
 
-    <div class="docs-layout">
-        <aside class="docs-sidebar" aria-label="Bölüm Gezintisi">
-            <div class="sidebar-title">Sözleşme Maddeleri</div>
-            <ul id="desktop-toc-list" class="toc-list">
-                <li><a href="#sec-1">1. Taraflar, Kapsam ve Uygulama Kapsamı</a></li>
-                <li><a href="#sec-2">2. Yerel Öncelikli Mimari ve Opsiyonel Google Drive</a></li>
-                <li><a href="#sec-3">3. Veri Kaybı Riski, Yedek Biçimleri ve Kullanıcı Sorumluluğu</a></li>
-                <li><a href="#sec-4">4. Ses İşleme, Dosya Ekleri ve Çöp Kutusu</a></li>
-                <li><a href="#sec-5">5. Sorumluluğun Sınırlandırılması</a></li>
-                <li><a href="#sec-6">6. Fikri Mülkiyet, Gizlilik ve İletişim</a></li>
-            </ul>
+      <div class="doc-layout">
+        <aside class="doc-sidebar" aria-label="İçindekiler">
+          <h2 data-i18n="doc_toc">İçindekiler</h2>
+          <ul id="desktop-toc-list" class="toc-list">
+              <li><a href="#sec-1">1. Taraflar, Kapsam ve Sürüm Ayrımı</a></li>
+              <li><a href="#sec-2">2. Yerel Öncelikli Mimari ve Opsiyonel Google Drive</a></li>
+              <li><a href="#sec-3">3. Veri Kaybı Riski, Yedek Biçimleri ve Kullanıcı Sorumluluğu</a></li>
+              <li><a href="#sec-4">4. Ses İşleme, Dosya Ekleri ve Çöp Kutusu</a></li>
+              <li><a href="#sec-5">5. Sorumluluğun Sınırlandırılması</a></li>
+              <li><a href="#sec-6">6. Fikri Mülkiyet, Gizlilik ve İletişim</a></li>
+          </ul>
         </aside>
 
         <article class="doc-article">
-            <div class="doc-header-block">
-                <span class="doc-badge">Hukuki Şartlar</span>
-                <h1>İcat Defteri – Kullanıcı Sözleşmesi</h1>
-                <div class="doc-meta">Son Güncelleme: 17 Kasım 2026 • Kalıcı Kullanıcı Sözleşmesi • Geliştirici: Ramazan Kocatürk</div>
-                <p style="color:var(--text-body); font-size:0.95rem;">İcat Defteri mobil uygulamasının kullanım koşullarını ve veri sorumluluğu sınırlarını düzenler. Lütfen özellikle Bölüm 3'teki veri kaybı ve yedekleme uyarılarını inceleyiniz.</p>
-                
+          <header class="doc-header">
+            <span id="doc-badge" class="doc-badge">Geliştirici: Ramazan Kocatürk</span>
+            <h1 id="doc-heading">İcat Defteri – Kullanıcı Sözleşmesi</h1>
+            <div id="doc-meta" class="doc-meta">Son Güncelleme: 21 Kasım 2026 • Kullanılabilir özellikler yüklü uygulama sürümüne göre değişebilir</div>
+            <div class="guide-lang-bar" role="group" aria-label="Doküman dili">
+              <button type="button" class="guide-lang-btn active" data-doc-lang="tr">TR</button>
+              <button type="button" class="guide-lang-btn" data-doc-lang="en">EN</button>
+              <button type="button" class="guide-lang-btn" data-doc-lang="de">DE</button>
+              <button type="button" class="guide-lang-btn" data-doc-lang="fr">FR</button>
+              <button type="button" class="guide-lang-btn" data-doc-lang="es">ES</button>
+              <button type="button" class="guide-lang-btn" data-doc-lang="it">IT</button>
+              <button type="button" class="guide-lang-btn" data-doc-lang="pt">PT</button>
             </div>
-            <div id="sections-host">
-                
-        <section id="sec-1" class="doc-section">
-            <h2>1. Taraflar, Kapsam ve Uygulama Kapsamı</h2>
-            <div class="doc-prose"><p>İşbu Kullanıcı Sözleşmesi ("Sözleşme"), İcat Defteri mobil uygulamasını ("Uygulama") kullanan gerçek kişi ("Kullanıcı") ile geliştirici <strong>Ramazan Kocatürk</strong> ("Geliştirici") arasında akdedilmiştir. Uygulamadaki yerel not, sesle yazma, M4A ses kaydı, ek dosyalar, çizim, PDF rapor ve isteğe bağlı Google Drive yedekleme özellikleri, yüklü uygulama sürümünde aktif olduğu ölçüde bu şartlara tabidir.</p></div>
-        </section>
+          </header>
 
-        <section id="sec-2" class="doc-section">
+          <div id="doc-highlight-host"></div>
+
+          <div id="doc-sections-host">
+          <section id="sec-1" class="doc-section">
+            <h2>1. Taraflar, Kapsam ve Sürüm Ayrımı</h2>
+            <div class="doc-prose"><p>İşbu Kullanıcı Sözleşmesi ("Sözleşme"), İcat Defteri mobil uygulamasını ("Uygulama") kullanan gerçek kişi ("Kullanıcı") ile geliştirici <strong>Ramazan Kocatürk</strong> ("Geliştirici") arasında akdedilmiştir. V1 yayınındaki yerel özelliklerin yanında V2.0 ile eklenen M4A ses kaydı, ek dosyalar, çizim, PDF rapor ve isteğe bağlı Google Drive yedekleme özellikleri ilgili sürüm aktif edildiğinde bu şartlara tabidir.</p></div>
+          </section>
+          <section id="sec-2" class="doc-section">
             <h2>2. Yerel Öncelikli Mimari ve Opsiyonel Google Drive</h2>
-            <div class="doc-prose"><p>İcat Defteri yerel öncelikli (local-first) çalışır:</p><ul><li>Notlar, başlıklar, etiketler, hatırlatıcılar, M4A ses kayıtları (<code>files/recordings/</code>) ve dosya ekleri (<code>files/attachments/</code>) yalnızca Kullanıcı cihazında tutulur.</li><li>Geliştiricinin kendi barındırdığı bulut veritabanı veya arka planda otomatik bulut senkronizasyon sunucusu <strong>yoktur</strong>.</li><li>Google Drive yedeklemesi (<code>drive.file</code>) tamamen isteğe bağlıdır; yalnızca Kullanıcı hesap bağlayıp yedekleme başlattığında Kullanıcı'nın kendi Google Drive alanındaki <em>İcat Defteri / Yedekler</em> klasörüne yükleme yapılır. Kullanılabilir özellikler, yüklü uygulama sürümüne göre değişebilir.</li></ul></div>
-        </section>
-
-        <section id="sec-3" class="doc-section">
+            <div class="doc-prose"><p>İcat Defteri yerel öncelikli (local-first) çalışır:</p><ul><li>Notlar, başlıklar, etiketler, hatırlatıcılar, M4A ses kayıtları (<code>files/recordings/</code>) ve dosya ekleri (<code>files/attachments/</code>) yalnızca Kullanıcı cihazında tutulur.</li><li>Geliştiricinin kendi barındırdığı bulut veritabanı veya arka planda otomatik bulut senkronizasyon sunucusu <strong>yoktur</strong>.</li><li>Google Drive yedeklemesi (<code>drive.file</code>) tamamen isteğe bağlıdır; yalnızca Kullanıcı hesap bağlayıp yedekleme başlattığında Kullanıcı'nın kendi Google Drive alanındaki <em>İcat Defteri / Yedekler</em> klasörüne yükleme yapılır. Google Drive yedekleme özelliği, desteklenen uygulama sürümlerinde kullanıcı tarafından isteğe bağlı olarak etkinleştirilir; kullanılabilir özellikler yüklü uygulama sürümüne göre değişebilir.</li></ul></div>
+          </section>
+          <section id="sec-3" class="doc-section">
             <h2>3. Veri Kaybı Riski, Yedek Biçimleri ve Kullanıcı Sorumluluğu</h2>
-            <div class="doc-prose"><div class="warning-box"><strong>ÖNEMLİ UYARI:</strong> Uygulamada Android otomatik bulut yedeklemesi kapalıdır (<code>allowBackup=false</code>). Telefonun kaybolması, çalınması, bozulması, sıfırlanması veya İcat Defteri'nin kaldırılması hâlinde cihazdaki tüm yerel veriler kalıcı olarak silinebilir. Yalnızca telefon hafızasında tutulan yedek de cihaz kaybıyla birlikte erişilemez olur; doğrulanmış bir yedeği cihaz dışında saklamak Kullanıcı'nın sorumluluğundadır.</div><ul><li><strong>Cihaza Metin Yedeği (.json):</strong> Yalnızca metin/not yapısını yedekler; M4A ses ve medya dosyalarını <strong>içermez</strong>.</li><li><strong>Gelişmiş Yerel Arşiv (.zip / .icdbak) & Drive Yedeği:</strong> Medya seçeneği kapalıyken yalnızca metin verileri aktarılır ve yeni cihazda ses/ek dosyaları geri gelmez. Medya açıkken desteklenen ses ve ekler pakete eklenir (kota, boş alan ve internet bağlantısı gerekir).</li><li><strong>İsteğe Bağlı Parola (.icdbak):</strong> Geliştirici parolayı bilmez ve sıfırlayamaz; unutulursa yedeğe erişilemeyebilir. Parola konmazsa arşiv dosya düzeyinde ekstra uygulama parolasıyla korunmaz.</li><li><strong>Geri Yükleme:</strong> <em>Birleştir</em> mevcut verilere yeni öğeleri ekler; <em>Üzerine Yaz</em> onay sonrası yerel kayıtları seçilen yedekle değiştirir (öncesinde güncel yedek alınması önerilir).</li></ul></div>
-        </section>
-
-        <section id="sec-4" class="doc-section">
+            <div class="doc-prose"><div class="warning-box"><strong>ÖNEMLİ UYARI:</strong> Uygulamada Android otomatik bulut yedeklemesi kapalıdır (<code>allowBackup=false</code>). Telefonun kaybolması, çalınması, bozulması, sıfırlanması veya İcat Defteri'nin kaldırılması hâlinde cihazdaki tüm yerel veriler kalıcı olarak silinebilir. Yalnızca telefon hafızasında tutulan yedek de cihaz kaybıyla birlikte erişilemez olur; doğrulanmış bir yedeği cihaz dışında saklamak Kullanıcı'nın sorumluluğundadır.</div><ul><li><strong>Yerel Yedekleme (Cihaza Yedekle — .json / .zip):</strong> <em>Hızlı Metin Yedeği (.json)</em> yalnızca metin/not yapısını yedekler; M4A ses, fotoğraf, video ve ekleri <strong>içermez</strong>. <em>Tam Yedek (.zip)</em> medya seçeneği açıkken desteklenen ses ve ekleri, kapalıyken yalnızca metin ve not yapısını <strong>şifresiz ZIP</strong> olarak paketler. Yerel yedekler İcat Defteri tarafından ayrıca parola ile şifrelenmez.</li><li><strong>Google Drive Yedekleme (Şifresiz ZIP):</strong> Kullanıcı kendi Google hesabına medyalı veya medyasız olarak yalnızca <strong>şifresiz ZIP</strong> formatında manuel yedek aktarabilir (depolama alanı, Drive kotası ve internet bağlantısı gerekir). Google Drive yedekleri İcat Defteri tarafından ayrıca parola ile şifrelenmez.</li><li><strong>Geri Yükleme:</strong> <em>Birleştir</em> mevcut verilere yeni öğeleri ekler; <em>Üzerine Yaz</em> onay sonrası yerel kayıtları seçilen yedekle değiştirir (öncesinde güncel yedek alınması önerilir).</li></ul></div>
+          </section>
+          <section id="sec-4" class="doc-section">
             <h2>4. Ses İşleme, Dosya Ekleri ve Çöp Kutusu</h2>
             <div class="doc-prose"><ul><li>Canlı sesle yazma (dikte), Android/Google Ses Hizmetleri altyapısını kullanır ve ham ses kaydetmez.</li><li><em>Ses Kaydet (.m4a)</em> özelliği sesi cihazın halka açık Müzik klasörüne değil uygulamaya özel <code>files/recordings/</code> alanına kaydeder. Kayıt eksikse not korunur ancak dosya eksik uyarısı gösterilir.</li><li>Fotoğraf, video, belge (200 MB sınırı) ve çizimler <code>files/attachments/</code> içine bağımsız kopya olarak alınır; kaynak dosyanın galeriden silinmesi bu kopyayı silmez, uygulamadaki kalıcı silme işlemi de telefonunuzdaki orijinal galeri dosyasına dokunmaz. Paylaşma/PDF dışa aktarımı ayrı kopya üretir.</li></ul></div>
-        </section>
-
-        <section id="sec-5" class="doc-section">
+          </section>
+          <section id="sec-5" class="doc-section">
             <h2>5. Sorumluluğun Sınırlandırılması</h2>
-            <div class="doc-prose"><p>Sorumluluğun sınırlandırılması yalnızca yürürlükteki hukukun izin verdiği ölçüde geçerlidir; tüketicinin vazgeçilemeyen yasal haklarını ortadan kaldırmak üzere yorumlanamaz. Cihaz arızası, sıfırlama, silme, yedek almama, şifre unutma veya pil optimizasyonu kaynaklı alarm gecikmeleri Geliştirici kontrolü dışındadır. Uygulama "olduğu gibi" sunulur; Google Drive ve konuşma servisleri üçüncü taraf sağlayıcı koşullarına tabidir. Google hesabı bağlantısını kesmek Drive'daki mevcut yedekleri silmez.</p></div>
-        </section>
-
-        <section id="sec-6" class="doc-section">
+            <div class="doc-prose"><p>Sorumluluğun sınırlandırılması yalnızca yürürlükteki hukukun izin verdiği ölçüde geçerlidir; tüketicinin vazgeçilemeyen yasal haklarını ortadan kaldırmak üzere yorumlanamaz. Cihaz arızası, sıfırlama, silme, yedek almama veya pil optimizasyonu kaynaklı alarm gecikmeleri Geliştirici kontrolü dışındadır. Uygulama "olduğu gibi" sunulur; Google Drive ve konuşma servisleri üçüncü taraf sağlayıcı koşullarına tabidir. Google hesabı bağlantısını kesmek Drive'daki mevcut yedekleri silmez.</p></div>
+          </section>
+          <section id="sec-6" class="doc-section">
             <h2>6. Fikri Mülkiyet, Gizlilik ve İletişim</h2>
-            <div class="doc-prose"><p>Uygulama kodları, arayüz ve marka hakları Ramazan Kocatürk'e; Kullanıcı'nın oluşturduğu tüm fikir, ses, görsel ve not içerikleri tamamen Kullanıcı'ya aittir. Sözleşme onayı tek başına tüm isteğe bağlı izinler için sınırsız rıza sayılmaz; kişisel veri detayları Gizlilik Politikası ve KVKK Aydınlatma Metni'ndedir.<br><strong>E-posta:</strong> <a href="mailto:ramazankocaturk@gmail.com" style="color:var(--primary,#00D4FF);">ramazankocaturk@gmail.com</a></p></div>
-        </section>
-            </div>
-            
+            <div class="doc-prose"><p>Uygulama kodları, arayüz ve marka hakları Ramazan Kocatürk'e; Kullanıcı'nın oluşturduğu tüm fikir, ses, görsel ve not içerikleri tamamen Kullanıcı'ya aittir. Sözleşme onayı tek başına tüm isteğe bağlı izinler için sınırsız rıza sayılmaz; kişisel veri detayları Gizlilik Politikası ve KVKK Aydınlatma Metni'ndedir.<br><strong>E-posta:</strong> <a href="mailto:ramazankocaturk@gmail.com" >ramazankocaturk@gmail.com</a></p></div>
+          </section>
+          </div>
+
+          <div class="version-note" style="margin-top:24px;text-align:left;" data-i18n="version_note">
+            Kullanılabilir özellikler, yüklü uygulama sürümüne göre değişebilir. Bazı yeni özellikler (gerçek M4A ses kaydı, medya ekleri, 5 tema, tam ZIP ve isteğe bağlı Google Drive yedekleme) V2.0.0 sürümüyle birlikte sunulmaktadır.
+          </div>
         </article>
+      </div>
     </div>
-</main>
-<footer class="site-footer">
-    <div class="footer-inner">
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
         <div class="footer-brand">
-            <img src="assets/Icat_Defteri_Play-Store_Icon_512.png" alt="İcat Defteri Logosu" class="footer-logo" width="28" height="28">
-            <div class="footer-meta">
-                <div><strong>İcat Defteri</strong> • Geliştirici ve Veri Sorumlusu: <strong>Ramazan Kocatürk</strong></div>
-                <div>Destek ve Başvuru: <a href="mailto:ramazankocaturk@gmail.com">ramazankocaturk@gmail.com</a> • Kullanılabilir özellikler, yüklü uygulama sürümüne göre değişebilir.</div>
-            </div>
+          <img src="assets/icon-192.webp" alt="" width="28" height="28" loading="lazy">
+          <span>İcat Defteri</span>
         </div>
-        <nav class="footer-links" aria-label="Alt Menü">
-            <a href="index.html">Ana Sayfa</a>
-            <a href="guide.html">Kullanım Kılavuzu</a>
-            <a href="privacy.html">Gizlilik Politikası</a>
-            <a href="kvkk.html">KVKK Aydınlatma</a>
-            <a href="terms.html">Kullanıcı Sözleşmesi</a>
+
+        <nav class="footer-links" aria-label="Alt bilgi bağlantıları">
+          <a href="index.html" data-i18n="nav_home">Ana Sayfa</a>
+          <a href="guide.html" data-i18n="nav_guide">Kullanım Kılavuzu</a>
+          <a href="privacy.html" data-i18n="priv_link_policy">Gizlilik Politikası</a>
+          <a href="terms.html" data-i18n="priv_link_terms">Kullanım Şartları</a>
+          <a href="kvkk.html" data-i18n="priv_link_kvkk">KVKK Aydınlatma Metni</a>
+          <a href="mailto:ramazankocaturk@gmail.com">ramazankocaturk@gmail.com</a>
         </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-i18n="footer_copy">© 2026 Ramazan Kocatürk — İcat Defteri</span>
+        <span data-i18n="footer_note">Resmî web sitesi · icatdefteri.com</span>
+      </div>
     </div>
-</footer>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="docs-data.js"></script>
+  <script src="site.js"></script>
 </body>
 </html>
